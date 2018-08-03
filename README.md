@@ -5,4 +5,4 @@ Wesentliche Ereignisse im Zusammenhang mit Open Data und angrenzenden Themen sin
 
 # Abhängigkeiten
 
-Die Anwendung basiert auf  [vis.js](http://visjs.org/docs/timeline/) und [DataTables](https://datatables.net/). Außerdem werden [jQuery](https://jquery.com/) und [https://jqueryui.com/](jQuery UI), sowie Flaggen-Icons von [FAMFAMFAM](http://www.famfamfam.com) verwendet.
+Die Anwendung basiert auf  [vis.js](http://visjs.org/docs/timeline/) und [DataTables](https://datatables.net/). Außerdem werden [jQuery](https://jquery.com/) und [jQuery UI](https://jqueryui.com/), sowie Flaggen-Icons von [FAMFAMFAM](http://www.famfamfam.com) verwendet.
