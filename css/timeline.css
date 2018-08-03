@@ -1,0 +1,82 @@
+.floss {
+    background-color: #aaEEaa;
+    border-color: black
+}
+
+.floss-bg {
+    background-color: rgb(217, 240, 217) !important;
+    border-color: black
+}
+
+
+.opengov {
+    Background-color: lightcoral; border-color: black
+}
+
+.opengov-bg {
+    Background-color: rgb(238, 187, 187) !important; border-color: black; 
+}
+.openX {
+    Background-color: #EEEEaa; border-color: black
+}
+
+.openX-bg {
+    Background-color: rgb(241, 241, 190) !important; border-color: black
+}
+
+.geoinf{
+    Background-color: #d5ddf6; border-color: black
+}
+
+.geoinf-bg{
+    Background-color: #eef0f5 !important; border-color: black
+}
+
+.coloredbox {
+    border:solid; border-width: 0.5pt; opacity:1; margin:0; padding:0; margin-bottom:0px; margin-right:10px; margin-left:10px; width:50px; height: 1.25em;float: left
+}
+
+
+body, html {
+    font-family: Roboto, Helvetica, sans-serif;
+
+     /*background-color: lightcoral;*/
+}
+
+h1, h2, h3{
+font-family: "Open Sans", sans-serif;
+}
+
+
+ /* Source: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+
+      .collapsible {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .collapsible:hover {
+      background-color: #ccc;
+      }
+
+      /* Style the collapsible content. Note: hidden by default */
+      .content {
+      padding: 0 18px;
+      display: none;
+      overflow: auto;
+      background-color: #f1f1f1;
+      max-width: 500px;
+      white-space: normal;
+      text-align: left;
+
+      }
+
+

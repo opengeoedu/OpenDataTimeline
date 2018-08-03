@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Open Data-Timeline</title>
+
+
+  <link href="css/timeline.css" rel="stylesheet" type="text/css" />
+
+  <script src="js/vis-4.21.0/dist/vis.js"></script>
+  <link href="js/vis-4.21.0/dist/vis.css" rel="stylesheet" type="text/css" />
+  <link href="js/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+
+  <!--<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.16/js/dataTables.semanticui.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
+  <link href="https://cdn.datatables.net/1.10.16/css/dataTables.semanticui.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">-->
+  <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+
+  <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+  <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+  <style>
+    p {
+      max-width: 800px;
+      text-align: justify;
+    }
+
+    h1, p {
+      margin-left: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>Open Data-Timeline</h1>
+
+  <p>Wesentliche Ereignisse im Zusammenhang mit Open Data und angrenzenden Themen sind hier in einer interaktiven Timeline zusammengefasst. Sie ist Teil der <a href="https:www.opengeoedu.de/learn/opendata/vorlesung" target="_blank">Vorlesung Open Data</a> im Offenen Onlinekurs OpenGeoEdu.</p>
+
+  <div id="tabs">
+      <ul>
+          <li><a href="#graphical-view">Interaktive Timeline</a></li>
+          <li><a href="#table-view">Tabellenansicht</a></li>
+        </ul>
+    <div id="graphical-view">
+        <em>Clicken Sie auf die Grafik, um mit der Timeline zu interagieren. Mit Drücken der Escape-Taste oder einem Mausclick außerhalb des Rahmens wird die Anwendung wieder inaktiv. Mit einem Click auf die verschiedenen Boxen können sie Informationen zu den Ereignissen einblenden.</em>
+        <br/><br/>
+
+        <input type="button" id="window1" value="Zeige Ereignisse vor 2000">
+        <input type="button" id="window2" value="Zeige Ereignisse ab 2000 bis 2010">
+        <input type="button" id="window3" value="Zeige Ereignisse ab 2010 bis heute">
+        <input type="button" id="fit" value="Zeige alle Ereignisse">
+        <br/><br/>
+
+        <div id="visualization"></div>
+    </div>
+    <div id="table-view" style="width: 100%; padding-left: 0%">
+      <div id="legend"></div>
+      <br/>
+      <br/>
+     </div>
+
+ </div>
+
+  <p><small><b>Source Code: </b><a href="https://github.com/opengeoedu/OpenDataTimeline">https://github.com/opengeoedu/OpenDataTimeline</a></small></p>
+
+
+
+  <!--<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>-->
+
+  <script>var data_ref = "timeline.csv";  </script>
+  <script src="js/maketimeline.js"></script>
+
+<script>
+    $( "#tabs" ).tabs();
+</script>
+
+</body>
+
+</html>
