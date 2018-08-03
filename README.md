@@ -1,7 +1,7 @@
 # Open Data Timeline
 Wesentliche Ereignisse im Zusammenhang mit Open Data und angrenzenden Themen sind hier in einer interaktiven Timeline zusammengefasst. Sie ist Teil der  [Vorlesung Open Data](https://www.opengeoedu.de/learn/opendata/vorlesung) im offenen Onlinekurs OpenGeoEdu.
 
-![Screenshot](Bildschirmfoto vom 2018-08-03 13-55-18.png)
+![Screenshot](Bildschirmfoto_vom_2018-08-03_13-55-18.png)
 
 # Abhängigkeiten
 
