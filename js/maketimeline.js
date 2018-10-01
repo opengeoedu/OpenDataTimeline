@@ -50,7 +50,7 @@ String.prototype.replaceAll = function(search, replacement) {
     }
 
     function arrayToTable(tableData) {
-      var table = $('<table id="timeline" class="display" width="95%" padding="0" style="padding-left:0pt;"></table>');
+      var table = $('<table id="timeline_table" class="display" width="95%" padding="0" style="padding-left:0pt;"></table>');
 
       table.append("<thead> <tr>" +
         "<th>Datum</th>" +
@@ -82,11 +82,13 @@ String.prototype.replaceAll = function(search, replacement) {
       return table;
     }
 
-    var dt_german = "DataTables/dt/German.json";
+    var dt_german = "DataTables/lang/German.json";
 
     if(typeof file_base !== 'undefined'){
       dt_german = file_base + dt_german;
     }
+
+    console.log(dt_german);
 
     $.ajax({
       type: "GET",
@@ -96,7 +98,7 @@ String.prototype.replaceAll = function(search, replacement) {
         $('#table-view').append(arrayToTable(Papa.parse(data).data));
 
         $(document).ready(function() {
-          $('#timeline').DataTable({
+          $('#timeline_table').DataTable({
             paging: true,
             responsive:false,
             language: {
